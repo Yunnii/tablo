@@ -1,7 +1,4 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var pluginExtractCSS = new ExtractTextPlugin('main.css', {
-    allChunks: true
-});
 
 var config =  {
     name: 'ru',
@@ -28,12 +25,12 @@ var config =  {
         preLoaders: [
             {
                 test: /\/blocks\/.*\.jsx$/,
-                loader: 'baggage?[dir].css&&[dir].ie.css&script.js'
+                loader: 'baggage?[dir].css&script.js'
             }
         ],
         noParse: [],
         loaders: [
-            {test: /\.css$/, loader: pluginExtractCSS.extract('style-loader', 'css-loader')},
+            {test: /\.css$/, loader: ExtractTextPlugin.extract('css-loader')},
             {test: /\.js$/, loader: 'jsx-loader?harmony'},
             {test: /\.jpg$/, loader: "file-loader?name=[path][name].[ext]"},
             {test: /\.png$/, loader: "file-loader?name=[path][name].[ext]"},
@@ -42,7 +39,7 @@ var config =  {
         ]
     },
     plugins: [
-        pluginExtractCSS
+        new ExtractTextPlugin("[name].css")
     ]
 };
 

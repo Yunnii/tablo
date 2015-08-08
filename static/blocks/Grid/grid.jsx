@@ -4,16 +4,23 @@ require('./__cell-inner/grid__cell-inner.css');
 require('./__cell/grid__cell');
 
 var GridHead = require('./__head/grid__head');
+var Logo = require('../Logo/logo');
 
 var Grid = React.createClass({
     render: function () {
         var flights =this.props.data.map(function(flight) {
-            var fields = this.props.order.map(function(field, i){
+            var fields = this.props.order.map(function(field){
+                var fieldInfo = flight[field];
+
+                if(field === 'airLogo') {
+                    fieldInfo = <Logo name={flight[field]}/>;
+                }
+
                 return (
                     <div className={b('cell', {name: field})}>
-                    <div className={b('cell-inner')}>
-                        {flight[field]}&nbsp;
-                    </div>
+                        <div className={b('cell-inner')}>
+                        {fieldInfo}
+                        </div>
                     </div>
                 );
             });
@@ -23,16 +30,6 @@ var Grid = React.createClass({
                 {fields}
                 </div>
             );
-        }.bind(this));
-
-        var header = this.props.order.map(function(field, i){
-            return (
-                <div className={b('cell', {name: field})}>
-                    <div className={b('cell-inner')}>
-                    {this.props.propertyNames[field]}
-                    </div>
-                </div>
-            )
         }.bind(this));
 
         return (

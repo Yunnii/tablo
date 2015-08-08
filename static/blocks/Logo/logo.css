@@ -1,0 +1,15 @@
+.logo
+{
+    width: 100%;
+
+    vertical-align: middle;
+}
+
+.logo_type_air
+{
+    display: none;
+
+    width: 40px;
+    margin: 0 auto;
+    padding: 20px 0 0;
+}

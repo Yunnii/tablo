@@ -15,9 +15,9 @@
     "flightNumber": "Номер рейса",
     "aircompany": "Авиакомпания",
     "airLogo": "Логотип",
-    "arrive": "Пункт назначения",
-    "departureTime": "Прибытие",
-    "arriveTime": "Отправление",
+    "arrive": "Назначение",
+    "departureTime": "Отправление",
+    "arriveTime": "Прибытие",
     "status": "Статус",
     "note": "Примечание"
   },
@@ -27,111 +27,111 @@
       "type": "departure",
       "flightNumber": "AY005",
       "aircompany": "Finnair",
-      "airLogo": "",
+      "airLogo": "finnair",
       "arrive": "New York J F Kennedy Internati",
       "departureTime": "15:46",
       "arriveTime": "14:23",
       "status": "Вылетел",
-      "note": ""
+      "note": "-"
     },
     {
       "type": "depature",
       "flightNumber": "AY081",
-      "aircompany": "",
-      "airLogo": "",
+      "aircompany": "Finnair",
+      "airLogo": "finnair",
       "arrive": "Duesseldorf International AIRP",
       "departureTime": "18:50",
       "arriveTime": "22:10",
-      "status": "",
-      "note": ""
+      "status": "-",
+      "note": "-"
     },
     {
       "type": "depature",
       "flightNumber": "AY3272",
       "aircompany": "AirBaltic",
-      "airLogo": "",
+      "airLogo": "airbaltic",
       "arrive": "Frankfur International APT",
       "departureTime": "19:10",
       "arriveTime": "22:00",
       "status": "Ожидание",
-      "note": ""
+      "note": "-"
     },
     {
       "type": "depature",
       "flightNumber": "AY918",
       "aircompany": "British Airways",
-      "airLogo": "",
+      "airLogo": "british-airways",
       "arrive": "Geneva",
       "departureTime": "20:40",
-      "arriveTime": "",
+      "arriveTime": "-",
       "status": "Отменен",
-      "note": ""
+      "note": "-"
     },
     {
       "type": "arrive",
       "flightNumber": "AY814",
       "aircompany": "Japan Airlines",
-      "airLogo": "",
+      "airLogo": "jal",
       "arrive": "Helsinki-Vantaa",
       "departureTime": "16:55",
       "arriveTime": "19:22",
       "status": "Вылетел",
-      "note": ""
+      "note": "-"
     },
     {
       "type": "arrive",
       "flightNumber": "AY818",
       "aircompany": "Air France",
-      "airLogo": "",
+      "airLogo": "airfrance",
       "arrive": "Oslo Gardemoen Airport",
       "departureTime": "18:05",
       "arriveTime": "20:23",
       "status": "Вылетел",
-      "note": ""
+      "note": "-"
     },
     {
       "type": "arrive",
       "flightNumber": "AY942",
       "aircompany": "Japan Airlains",
-      "airLogo": "",
+      "airLogo": "jal",
       "arrive": "Pisa",
       "departureTime": "20:20",
       "arriveTime": "22:50",
       "status": "Задерживается",
-      "note": ""
+      "note": "-"
     },
     {
       "type": "arrive",
       "flightNumber": "AY670",
       "aircompany": "Air France",
-      "airLogo": "",
+      "airLogo": "airfrance",
       "arrive": "Zurich Airport",
       "departureTime": "19:30",
-      "arriveTime": "",
+      "arriveTime": "-",
       "status": "Отменен",
-      "note": ""
+      "note": "-"
     },
     {
       "type": "arrive",
       "flightNumber": "AY668",
       "aircompany": "EasyJet",
-      "airLogo": "",
+      "airLogo": "easyjet",
       "arrive": "Dubrovnik",
       "departureTime": "18:45",
       "arriveTime": "22:00",
       "status": "Приземлился",
-      "note": ""
+      "note": "-"
     },
     {
       "type": "departure",
       "flightNumber": "AY180",
       "aircompany": "EasyJet",
-      "airLogo": "",
+      "airLogo": "easyjet",
       "arrive": "London Heartrow APT",
       "departureTime": "19:30",
       "arriveTime": "22:50",
       "status": "Посадка закончена",
-      "note": ""
+      "note": "-"
     }
   ]
 }

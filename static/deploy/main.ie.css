@@ -1,6 +1,6 @@
 .grid__cell
 {
-    display: table-cell;
+    height: 100%;
 }
 
 .grid__row:hover {
@@ -23,4 +23,9 @@
 .grid__cell:hover:after
 {
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYGD4bwwQYAACNgEzA71NfwAAAABJRU5ErkJggg==");
+}
+
+.grid__head
+{
+    display: block;
 }

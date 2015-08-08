@@ -23,7 +23,7 @@
         padding: inherit;
     }
 
-    .grid__cell_name_departureTime
+    .grid__cell_name_note
     {
         display: none;
     }
@@ -46,5 +46,69 @@
         text-overflow: ellipsis;
 
         -o-text-overflow: ellipsis;
+    }
+
+    .grid__cell_name_status
+    {
+        display: none;
+    }
+
+    .grid__cell
+    {
+        width: 16.6%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .grid__cell_name_arriveTime .grid__cell-inner_head_yes,
+    .grid__cell_name_departureTime .grid__cell-inner_head_yes
+    {
+        display: none;
+    }
+
+    .grid__cell_name_arriveTime .logo_type_air,
+    .grid__cell_name_departureTime  .logo_type_air
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    .grid__cell_name_type
+    {
+        display: none;
+    }
+
+    .grid__cell
+    {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 310px)
+{
+    .grid__cell_name_airLogo
+    {
+        display: none;
+    }
+
+    .grid__cell
+    {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 260px)
+{
+    .grid__cell_name_arrive
+    {
+        display: none;
+    }
+
+    .grid__cell
+    {
+        width: 33.3%;
     }
 }
