@@ -1,34 +1,18 @@
 var b = require('b_').with('grid');
-require('./__row/grid__row');
-require('./__cell-inner/grid__cell-inner.css');
-require('./__cell/grid__cell');
 
-var GridHead = require('./__head/grid__head');
-var Logo = require('../Logo/logo');
+var GridRow = require('./grid__row/grid__row');
+require('./grid__cell-inner/grid__cell-inner.css');
+require('./grid__cell/grid__cell');
+
+var GridHead = require('./grid__head/grid__head');
 
 var Grid = React.createClass({
+
     render: function () {
-        var flights =this.props.data.map(function(flight) {
-            var fields = this.props.order.map(function(field){
-                var fieldInfo = flight[field];
-
-                if(field === 'airLogo') {
-                    fieldInfo = <Logo name={flight[field]}/>;
-                }
-
-                return (
-                    <div className={b('cell', {name: field})}>
-                        <div className={b('cell-inner')}>
-                        {fieldInfo}
-                        </div>
-                    </div>
-                );
-            });
-
+        var flights =this.props.data.map(function(flight, i) {
             return (
-                <div className={b('row')}>
-                {fields}
-                </div>
+                <GridRow flight={flight} order={this.props.order}
+                    onClick={this.props.showPopup} key={'row-' + i}></GridRow>
             );
         }.bind(this));
 

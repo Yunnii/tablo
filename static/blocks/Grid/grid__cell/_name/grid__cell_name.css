@@ -87,9 +87,9 @@
     }
 }
 
-@media screen and (max-width: 310px)
+@media screen and (max-width: 330px)
 {
-    .grid__cell_name_airLogo
+    .grid__cell_name_arrive
     {
         display: none;
     }
@@ -100,9 +100,10 @@
     }
 }
 
-@media screen and (max-width: 260px)
+@media screen and (max-width: 300px)
 {
-    .grid__cell_name_arrive
+
+    .grid__cell_name_airLogo
     {
         display: none;
     }

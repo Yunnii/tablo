@@ -1,0 +1,61 @@
+.popup
+{
+    display: none;
+}
+
+.popup_show_yes
+{
+    display: block;
+}
+
+.popup__section
+{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 60%;
+    height: 100px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.popup__content
+{
+    padding: 40px;
+
+    background-color: #fff;
+}
+
+.popup__text
+{
+    font-size: 18px;
+    line-height: 32px;
+
+    padding: 0 10px;
+}
+
+.paranja
+{
+  position: fixed;
+  top: -100%;
+  right: -100%;
+  bottom: -100%;
+  left: -100%;
+
+  background: rgba(0, 0, 0, .5);
+}
+
+.paranja_state_open
+{
+  visibility: visible;
+
+  -webkit-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
+
+  opacity: 1;
+}

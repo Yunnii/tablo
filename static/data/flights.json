@@ -2,8 +2,8 @@
   "order": [
     "type",
     "flightNumber",
-    "aircompany",
     "airLogo",
+    "aircompany",
     "arrive",
     "arriveTime",
     "departureTime",
