@@ -26,5 +26,5 @@
 
 .grid__row:hover
 {
-    background-color: rgba(0, 0, 255, 0.2) !important;
+    background-color: rgba(0, 0, 255, 0.2);
 }

@@ -1,3 +1,5 @@
+IE8+
+
 ```
 1) npm run deps - install all deps
 2) npm run wstatic - watch-mode for static

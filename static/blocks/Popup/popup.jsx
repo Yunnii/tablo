@@ -3,8 +3,8 @@ var paranja = require('b_').with('paranja');
 
 var Popup = React.createClass({
     hide: function() {
-        this.popup = this.popup || document.getElementsByClassName('popup')[0];
-        this.popup.className = "popup";
+        this.popup = this.popup || $('.popup');
+        this.popup.hide();
     },
 
     render: function () {

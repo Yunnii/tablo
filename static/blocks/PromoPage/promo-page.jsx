@@ -14,13 +14,14 @@ var PromoPage = React.createClass({
             info: info
         });
 
-        this.popup = this.popup || document.getElementsByClassName('popup')[0];
-        this.popup.className = this.popup.className + " popup_show_yes";
+        this.popup = this.popup || $('.popup');
+        this.popup.show();
     },
 
     render: function () {
         return (
             <div className={b()}>
+                <UserPane></UserPane>
                 <Grid data={this.props.flights.flights}
                       order={this.props.flights.order}
                       propertyNames={this.props.flights.propertyNames}

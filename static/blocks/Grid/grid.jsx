@@ -7,7 +7,6 @@ require('./grid__cell/grid__cell');
 var GridHead = require('./grid__head/grid__head');
 
 var Grid = React.createClass({
-
     render: function () {
         var flights =this.props.data.map(function(flight, i) {
             return (

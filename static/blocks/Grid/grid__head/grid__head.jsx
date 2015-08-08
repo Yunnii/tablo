@@ -3,7 +3,7 @@ var Logo = require('../../Logo/logo');
 
 var GridHead = React.createClass({
     render: function () {
-        var header = this.props.order.map(function(field, i){
+        var header = this.props.order.map(function (field, i) {
             return (
                 <div className={b('cell', {name: field})} key={'head-' + i}>
                     <div className={b('cell-inner', {head: 'yes'})}>
