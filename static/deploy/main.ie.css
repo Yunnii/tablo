@@ -1,0 +1,26 @@
+.grid__cell
+{
+    display: table-cell;
+}
+
+.grid__row:hover {
+    background-color: #0000ff;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+}
+
+.grid__cell_odd,
+.grid__row_odd
+{
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABBJREFUeNpi2PzkbgNAgAEAB7cC9Xc90RUAAAAASUVORK5CYII=");
+}
+
+.grid__row_even
+{
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYKhgYAYIMAABcAB8RbdyzAAAAABJRU5ErkJggg==");
+}
+
+.grid__cell:hover:after
+{
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYGD4bwwQYAACNgEzA71NfwAAAABJRU5ErkJggg==");
+}

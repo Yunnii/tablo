@@ -1,0 +1,13 @@
+{
+  "name": "tablo",
+  "version": "0.0.1",
+  "scripts": {
+    "run": "node server",
+    "rebuild": "cd ./static && npm run run",
+    "deps": "npm install && (cd ./server && npm run deps) && (cd ./static && npm run deps)",
+    "wstatic": "cd ./static && npm run watch",
+    "wserver": "cd ./server && npm run watch"
+  },
+  "dependencies": {
+  }
+}

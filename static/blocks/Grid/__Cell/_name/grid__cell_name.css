@@ -1,0 +1,50 @@
+@media screen and (max-width: 940px)
+{
+    .grid__row
+    {
+        padding: inherit;
+    }
+
+    .grid__cell_name_aircompany
+    {
+        display: none;
+    }
+
+    .grid__cell
+    {
+        width: 12.5%;
+    }
+}
+
+@media screen and (max-width: 785px)
+{
+    .grid__row
+    {
+        padding: inherit;
+    }
+
+    .grid__cell_name_departureTime
+    {
+        display: none;
+    }
+
+    .grid__cell
+    {
+        width: 14.2%;
+    }
+}
+
+@media screen and (max-width: 690px)
+{
+    .grid__cell_name_arrive .grid__cell-inner
+    {
+        overflow: hidden;
+
+        max-width: 100px;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        -o-text-overflow: ellipsis;
+    }
+}

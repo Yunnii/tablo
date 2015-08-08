@@ -1,0 +1,17 @@
+.grid
+{
+    zoom: 1;
+
+    margin-right: 50%;
+    padding-right: 0;
+}
+
+.grid__row
+{
+    zoom: 1;
+}
+
+.grid__cell
+{
+    display: inline;
+}

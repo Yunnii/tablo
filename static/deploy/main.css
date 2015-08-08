@@ -1,0 +1,230 @@
+.grid__cell-inner
+{
+    padding: 20px 5px;
+}.grid__row
+{
+    display: flex;
+
+    border-bottom: black solid 1px;
+}
+
+.grid__row:before,
+.grid__row:after
+{
+    display: block;
+    clear: both;
+
+    content: '';
+}
+
+.grid__row:nth-child(odd)
+{
+    background: rgba(0, 120, 0, .15);
+}
+
+.grid__row:nth-child(even)
+{
+    background: rgba(250, 250, 250, .05);
+}
+
+.grid__row:hover
+{
+    background-color: rgba(0, 0, 255, 0.2) !important;
+}.grid__row.grid__row_head_yes
+{
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    left: 0;
+
+    height: 70px;
+
+    color: #fff;
+    background-color: #1c7063;
+}.grid
+{
+    font: normal 14px/2em Arial, serif;
+
+    position: relative;
+
+    overflow: hidden;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+.grid:before,
+.grid:after
+{
+    display: block;
+    clear: both;
+
+    content: '';
+}
+
+.grid__body
+{
+    margin-top: 70px;
+}.grid__cell
+{
+    position: relative;
+
+    /*float: left;*/
+    display: inline-block;
+    width: 20%;
+    /*margin-right: -20%;*/
+
+    word-wrap: break-word;
+
+    border-right: black solid 1px;
+}
+
+.grid__body .grid__cell:nth-child(odd):after
+{
+    position: absolute;
+    z-index: -1;
+    top: -5000px;
+    left: 0;
+
+    width: 100%;
+    height: 10000px;
+
+    content: "";
+
+    background: rgba(0, 120, 0, .02);
+}
+
+.grid__cell:hover:after
+{
+    position: absolute;
+    z-index: -1;
+    top: -5000px;
+    left: 0;
+
+    width: 100%;
+    height: 10000px;
+
+    content: "";
+
+    background-color: rgba(0, 0, 255, 0.2) !important;
+}
+
+.grid__cell_pos_1
+{
+    left: 0;
+}
+
+.grid__cell_pos_2
+{
+    left: 20%;
+}
+
+.grid__cell_pos_3
+{
+    left: 40%;
+}
+
+.grid__cell_pos_4
+{
+    left: 60%;
+}
+
+.grid__cell_pos_5
+{
+    left: 80%;
+}
+
+.grid__cell_pos_6
+{
+    left: 100%;
+}
+
+.grid__cell_pos_7
+{
+    left: 120%;
+}
+
+.grid__cell_pos_8
+{
+    left: 140%;
+}
+
+.grid__cell_pos_9
+{
+    left: 160%;
+}@media screen and (max-width: 940px)
+{
+    .grid__row
+    {
+        padding: inherit;
+    }
+
+    .grid__cell_name_aircompany
+    {
+        display: none;
+    }
+
+    .grid__cell
+    {
+        width: 12.5%;
+    }
+}
+
+@media screen and (max-width: 785px)
+{
+    .grid__row
+    {
+        padding: inherit;
+    }
+
+    .grid__cell_name_departureTime
+    {
+        display: none;
+    }
+
+    .grid__cell
+    {
+        width: 14.2%;
+    }
+}
+
+@media screen and (max-width: 690px)
+{
+    .grid__cell_name_arrive .grid__cell-inner
+    {
+        overflow: hidden;
+
+        max-width: 100px;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        -o-text-overflow: ellipsis;
+    }
+}.grid__head
+{
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    left: 0;
+
+    display: flex;
+
+    height: 70px;
+
+    color: #fff;
+    border-bottom: black solid 1px;
+    background-color: #1c7063;
+}
+
+.grid__head:before,
+.grid__head:after
+{
+    display: block;
+    clear: both;
+
+    content: '';
+}
