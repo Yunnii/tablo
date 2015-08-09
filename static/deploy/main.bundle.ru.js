@@ -99,7 +99,6 @@
 	        return React.createElement(
 	            'div',
 	            { className: b() },
-	            React.createElement(UserPane, null),
 	            React.createElement(Grid, { data: this.props.flights.flights,
 	                order: this.props.flights.order,
 	                propertyNames: this.props.flights.propertyNames,
