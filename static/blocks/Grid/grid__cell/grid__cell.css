@@ -10,7 +10,7 @@
     word-wrap: break-word;
 }
 
-.grid__body .grid__cell:nth-child(odd):after
+.grid__cell:nth-child(odd):after
 {
     position: absolute;
     z-index: -1;
