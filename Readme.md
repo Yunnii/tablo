@@ -1,5 +1,7 @@
 IE8+
 
+http://yunnii.github.io/tablo/static/deploy/main.html
+
 ```
 1) npm run deps - install all deps
 2) npm run wstatic - watch-mode for static
