@@ -21,7 +21,6 @@ var PromoPage = React.createClass({
     render: function () {
         return (
             <div className={b()}>
-                <UserPane></UserPane>
                 <Grid data={this.props.flights.flights}
                       order={this.props.flights.order}
                       propertyNames={this.props.flights.propertyNames}
