@@ -85,7 +85,7 @@
     word-wrap: break-word;
 }
 
-.grid__cell:nth-child(odd):after
+.grid__body .grid__cell:nth-child(odd):after
 {
     position: absolute;
     z-index: -1;
@@ -100,7 +100,7 @@
     background: rgba(0, 120, 0, .02);
 }
 
-.grid__cell:hover:after
+.grid__body .grid__cell:hover:after
 {
     position: absolute;
     z-index: -1;
@@ -112,7 +112,7 @@
 
     content: "";
 
-    background-color: rgba(0, 0, 255, 0.2) ;
+    background-color: rgba(0, 0, 255, 0.2);
 }
 .grid__cell_pos_1
 {
