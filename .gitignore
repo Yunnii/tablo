@@ -2,7 +2,5 @@
 node_modules
 /server/node_modules
 /static/node_modules
-/static/deploy/main.bundle.ru.js
-/static/deploy/main.css
 /static/ngrok
 .DS_Store
