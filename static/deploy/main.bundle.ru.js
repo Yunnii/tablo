@@ -462,7 +462,7 @@
 	    displayName: 'Logo',
 
 	    render: function render() {
-	        return React.createElement('img', { src: '/tablo/static/deploy//i/' + this.props.name + '.png',
+	        return React.createElement('img', { src: '/tablo/static/deploy/i/' + this.props.name + '.png',
 	            alt: this.props.name, className: b({ type: this.props.type }) });
 	    }
 	});
